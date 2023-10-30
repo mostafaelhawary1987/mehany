@@ -24,23 +24,11 @@ $(".closebtn,.overlay").click( function() {
   $('.overlay').fadeOut();
   $('body').removeClass('ovh');
 });
-// search 
-$('.search-butt-om').on("click", function (e) {
-    e.preventDefault();
-    $(".search-st-abaya").toggleClass('active');
-    $(this).toggleClass('colse-act-om');
-});
-
-// $('.colse-act-om').on("click" , function(e){
-//     e.preventDefault();
-    
-// });
 
 // overlay
 $('.overlay-om , header nav .close-xs').on("click", function (e) {
     $(".search-om-form").removeClass("active");
     $(".overlay-om").removeClass("active");
-    $(".search-st-omcot .close-om").removeClass("active");
     $('body').css('overflow', 'auto');
     $(".nav-xs-om").removeClass("active");
 });
@@ -78,10 +66,7 @@ $(window).scroll(function() {
     }
 
 });
-$("h5[data-toggle='collapse']").on('click', function() {
-  $(this).parent().children('.collapse').collapse('toggle');
-  $(this).parent().parent().siblings().find('.collapse.in').collapse('hide');
-});
+
 
 $(".down[data-toggle='collapse']").on('click', function() {
   $(this).parent().children('.collapse').collapse('toggle');
@@ -103,11 +88,6 @@ function scrollFunction() {
 
 });
 
-if ($(window).width() <= 425){ 
+if ($(window).width() <= 480){ 
     $(".wow").removeClass("wow");
     }
-    
-
-    $('.formBtn').click(function(){
-        $("#contactForm button.close").trigger('click');
-    });
