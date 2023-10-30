@@ -500,6 +500,9 @@ header{
     width: 160px;
 
   }
+  .top.fixedheader .logo-one img {
+    width: 75px;
+}
   .top.fixedheader .top-head{padding-top: 15px;}
 
   .logo-head img{ width: 160px;
@@ -510,7 +513,14 @@ header{
 .login-but{
     display: flex;
 }
+.logo-one img {
+  width: 110px;
+}
 .log-center{}
+.phone-head .cont-fo a{
+  display: flex;
+  margin: 4px 0px;
+}
 .log-center a.lo-ce{
 /* 
     background-image: -moz-linear-gradient( to right, var(--main-color) 0%, var(--sec-color) 51%, var(--main-color) 100%);
@@ -1015,6 +1025,7 @@ h3.banner-title {
 @media (max-width:768px) {
     .login-but{display: none;}
     .register-head{display: none;}
+    .phone-head{display: none;}
 }
 @media (max-width:480px) {
     .content-home {
