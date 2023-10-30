@@ -32,6 +32,70 @@ $('.overlay-om , header nav .close-xs').on("click", function (e) {
     $('body').css('overflow', 'auto');
     $(".nav-xs-om").removeClass("active");
 });
+$('.content-slider').owlCarousel({
+  autoplay: false,
+  rtl: true,
+  loop: false,
+  dots:true,
+  nav: false,
+  items: 1,
+ 
+});
+$('.partner_slider').owlCarousel({
+  items:5,
+  autoplay:false,
+  rtl:true,
+  loop: true,
+  margin:18,
+  nav:false,
+     
+  responsive:{
+    0:{
+      items:1
+    },
+    425:{
+      items:2
+    },
+    768:{
+      items:3
+    },
+    991:{
+      items:4
+    },
+    1199:{
+      items:4
+    },
+    1200:{
+      items:5
+    }
+  }
+}); 
+   $('.testimonials_slider').owlCarousel({
+  
+  autoplay:false,
+  rtl:true,
+  loop: true,
+  margin:18,
+  nav:false,
+     dots:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    768:{
+      items:2
+    },
+    991:{
+      items:2
+    },
+    1199:{
+      items:3
+    },
+    1200:{
+      items:3
+    }
+  }
+}); 
 
 $(document).ready(function(){
 var a = 0;
