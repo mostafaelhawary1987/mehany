@@ -354,7 +354,7 @@
 }
 
 .sidenav {
-    right: -800px;
+    right: -1000px;
     overflow: scroll;
     height: 100%;
     width: 100%;
@@ -425,7 +425,7 @@
 
 .side-menu a.down:hover,
 .side-menu a.down:active {
-    color: var(--contact-color);
+    color: var(--main-color);
 }
 .side-logo{
     margin: 0px 15px;
@@ -462,7 +462,7 @@ a.down[aria-expanded="true"]:active {
         font-size: 18px;
     }
 }
-@media(min-width:769px) {
+@media(min-width:992px) {
     .side-menu {
         display: none
     }
@@ -497,7 +497,7 @@ header{
     transition: 0.4s ease; 
   }
   .top.fixedheader .logo-head img {
-    width: 160px;
+    width: 130px;
 
   }
   .top.fixedheader .logo-one img {
@@ -922,23 +922,35 @@ li.lang-head{margin-right: 20px;
   filter: grayscale(0);
 }
 .depart-title{text-align: center;}
-.depart-title h2{
-  position: relative;
-  color: var(--main-color);
+
+
+.depart-title  h2{
+  margin-top: 35px;
+  margin-bottom: 45px;
   font-size: 28px;
-  font-family: "tjBlk";
-  margin-bottom: 60px;
-  text-transform: uppercase;
+  font-family: 'tjMd';
+  display: inline-block;
+  position: relative;
+  color: var(--main-color);}
+  .depart-title h2::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 2px;
+    right: -28px;
+    bottom: 4px;
+    background-color: var(--sec-color);
+    transform: translateX(50%);
 }
-.depart-title h2::before {
+.depart-title h2::after {
   content: "";
   position: absolute;
-  width: 28px;
-  height: 6px;
-  top: 50px;
-  left: 50%;
+  width: 21px;
+  height: 2px;
+  left: -50px;
+  bottom: 4px;
   background-color: var(--sec-color);
-  transform: translateX(-50%);
+  transform: translateX(50%);
 }
 /* partners-section */
 
@@ -1139,6 +1151,7 @@ h3.banner-title {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 50px;
+    overflow: hidden;
   }
   .logo-foot img{  width: 245px;
     margin-bottom: 10px;}
@@ -1198,8 +1211,25 @@ h3.banner-title {
         width: 64%;
     }
 }
-
+@media (max-width:1024px) {
+  .login-but {
+    flex-flow: column;
+}
+.log-trainer a.lo-tr{margin: 5px 0px;}
+.top.fixedheader {
+  height: 132px;}
+}
 @media (max-width:991px) {
+  header {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+  .top.fixedheader {
+    height: 90px;
+}
+.top.fixedheader .top-head {
+  padding-top: 10px;
+}
     .title-content h2 {
         font-size: 33px;
     }
@@ -1239,11 +1269,13 @@ h3.banner-title {
                 width: 50%;
                 margin-top: 5px;
             }
-}
-@media (max-width:768px) {
-    .login-but{display: none;}
+            .login-but{display: none;}
     .register-head{display: none;}
     .phone-head{display: none;}
+    .menu-head{display: none;}
+}
+@media (max-width:768px) {
+    
 }
 @media (max-width:480px) {
     .content-home {
@@ -1334,6 +1366,12 @@ h3.banner-title {
             order: 3;
         }
         .le-copy a{font-size: 14px;}
+        .gallery-photo {
+          width: 50%;
+      }
+      .gallery-photo img {
+        height: 165px;
+    }
 }
 @media (max-width:425px) {
     .photo-content {display: none;}
@@ -1365,11 +1403,20 @@ h3.banner-title {
             .title-cent{text-align: center;}
 }
 @media (max-width:375px) {
+  .top.fixedheader .logo-one img {
+    width: 65px !important;
+}
+.top.fixedheader .logo-head img {
+  width: 102px;
+}
     h3.banner-title {
         font-size: 30px;
     }
 }
-
+@media (max-width:325px) {
+.logo-head .logo-one img {
+  width: 75px !important;
+}}
 
 /* ================================ */
 /* ================================ */
@@ -1382,9 +1429,10 @@ h3.banner-title {
   font-size: 17px;
   font-family: "tjMd";
   color: var(--text-color);
+  list-style-position: inside;
 }
 h3.line-head{padding: 15px 15px;
-  background-color: #f3c950;
+  background-color: #312783cc;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
   box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
@@ -1403,7 +1451,7 @@ h3.line-head{padding: 15px 15px;
  .title-center  h2{
         margin-top: 35px;
         margin-bottom: 45px;
-        font-size: 48px;
+        font-size: 38px;
         font-family: 'tjMd';
         display: inline-block;
         position: relative;
@@ -1444,6 +1492,33 @@ h3.line-head{padding: 15px 15px;
           font-family: "tjMd";
           color: var(--text-color);
         }
+        @media (max-width:480px) {
+          .title-center h2{    font-size: 28px;}
+          
+          .sign-now p {
+                padding: 30px 25px;
+        }
+        }
+        @media (max-width:425px) {
+          .top.fixedheader .top-head {
+            padding-top: 10px;
+        }
+          .logo-one img {
+          width: 95px;
+      }
+      .logo-head img {
+        width: 95px;
+    }
+    
+    }
+        @media (max-width:375px) {
+        .title-center h2 {
+          margin-bottom: 35px;
+          font-size: 24px;
+
+      }
+      .feature-content span{font-size: 18px;}
+    }
 /* ================================ */
 /* ================================ */
 /* About Page */
@@ -1457,14 +1532,14 @@ h3.line-head{padding: 15px 15px;
 }
 .feature-content span{
   padding: 15px 15px;
-    background-color: #f3c950;
+    background-color: #312783cc;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
     box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 15px;
-    font-size: 26px;
+    font-size: 21px;
     text-shadow: 1px 1px #000000;
     display: block;
 }
@@ -1474,8 +1549,9 @@ h3.line-head{padding: 15px 15px;
     font-size: 17px;
     font-family: "tjMd";
     color: var(--text-color);
+    list-style-position: inside;
 }
-.feature-content span{}
+
 .sign-now p{
   margin-top: 45px;
   background-color: var(--main-color);
@@ -1503,3 +1579,243 @@ h3.line-head{padding: 15px 15px;
 .sign-now a:hover{
   color: var(--sec-color);
 }
+/* ================================ */
+/* ================================ */
+/* Programs Page */
+/* ================================ */
+/* ================================ */
+
+.feat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feat-one {
+  margin: 0px 15px;
+  /* padding: 20px; */
+  justify-content: center;
+  display: flex;
+  width:30%;
+ 
+  background-color: #fff;
+  height: 266px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgb(1 1 1 / 10%);
+  box-shadow: 0px 0px 8px 0px rgb(1 1 1 / 10%);
+}
+.feat-1 .feat-photo{margin-top: 15px;text-align: center;
+  margin-bottom: 15px;}
+.feat-one:hover {
+ border-color:  var(--sec-color);
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.feat-photo img{ width: 170px;
+  margin: auto;
+  height: 150px;}
+.feat-title span{font-size: 19px;
+  color: var(--main-color);
+  font-family: "tjBlk";
+}
+.feat-title .feat-la{font-size: 19px;
+  color: var(--main-color);
+  font-family: "tjBlk";
+}
+.feat-title{text-align: center;}
+.feat-one:hover .feat-title span{color: var(--sec-color);}
+.feat-one:hover .feat-la{color: var(--sec-color);}
+@media (max-width:991px) {
+  .feat-one{width: 45%;}
+}
+@media (max-width:480px) {
+  .title-center h2 {
+    font-size: 26px;}
+  .feat-one{margin: 0px 10px;
+    width: 45%;}
+    .feat-title .feat-la {
+      font-size: 16px;
+  }
+  .feat-title span {
+    font-size: 16px;
+}
+}
+@media (max-width:375px) {.feat-one{width: 80%;    margin: 10px 0px;}}
+/* ================================ */
+/* ================================ */
+/* Contact Page */
+/* ================================ */
+/* ================================ */
+.contact-us.details {
+  
+  margin-bottom: 60px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
+  box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
+}
+.f-ti img {
+  margin: 0px 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.contact-us.details h2 {
+  font-size: 25px;
+  font-family: "tjBold";
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+.f-ti span{font-size: 18px;
+  font-weight: 500;
+  color: var(--contact-color);}
+  .f-ti li {margin-bottom:13px}
+.social-foot.contact h3 {
+  font-size: 20px;
+  font-family: "tjBold";
+  margin-bottom: 30px;
+}
+.cont-flex{    background-color: white;
+  border-radius: 15px;
+}
+@media(max-width:480px) {
+  .contact-us.details h2 {
+    text-align: center;
+    margin-bottom: 20px;  
+}
+.contact-us.details .f-ti li{flex-direction: column;}
+.social-foot.contact i {
+  margin: 0px 4px;}
+}
+
+.cont .form_input {
+  
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border: 1px solid rgb(242, 242, 242);
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  padding: 0px 15px;
+  width: 100%;
+  height: 55px;
+  box-shadow: none;
+  border-radius: 15px;
+  text-align: right;
+}
+  .cont textarea {
+    width: 100%;
+    height: 127px;
+    outline: 0;
+    padding: 10px 12px;
+    border:0;
+    border-radius: 10px;
+    border: 1px solid rgb(242, 242, 242);
+  background-color: rgb(255, 255, 255);
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;}
+
+    .cont textarea:focus {
+      border-color: var(--main-color
+      );
+  }
+ 
+  textarea::placeholder {
+    color: var(--contact-color);
+    font-size: 16px;
+    font-family: "tjMd";
+  }
+    .form_input::-webkit-input-placeholder {
+      color:var(--contact-color);
+  }
+  .form_input:-ms-input-placeholder {
+      color: var(--contact-color);
+  }
+  .form_input::-ms-input-placeholder {
+      color: var(--contact-color);
+  }
+  .form_input::placeholder {
+    color: var(--contact-color);
+      font-size: 16px;
+      font-family: "tjMd";
+  }
+  .contact-us.details .form-select {
+    color: var(--contact-color);
+      font-size: 16px;
+      font-family: "tjMd";
+      border: 1px solid rgb(242, 242, 242);
+  }
+  .form_input:focus {
+    border-color: var(--main-color);
+}
+.contact-us.details .form-select:focus {
+    border-color: var(--main-color);
+}
+
+    .ask-send .btn{
+      line-height: 46px;
+      width: 150px;
+      background-size: 200% auto;
+      background-position: left center;
+      height: 50px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      -webkit-transition: 0.5s ease;
+      -o-transition: 0.5s ease;
+      transition: 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "tjMd";
+      background-image: -moz-linear-gradient( to right, rgb(177, 36, 129) 0%, rgb(233, 30, 121) 51%, rgb(177, 36, 129) 100%);
+      background-image: -webkit-linear-gradient( to right, rgb(177, 36, 129) 0%, rgb(233, 30, 121) 51%, rgb(177, 36, 129) 100%);
+      background-image: -ms-linear-gradient( to right, rgb(177, 36, 129) 0%, rgb(233, 30, 121) 51%, rgb(177, 36, 129) 100%);
+      background-image: linear-gradient( to right, rgb(177, 36, 129) 0%, rgb(233, 30, 121) 51%, rgb(177, 36, 129) 100%);}
+      .ask-send .btn:hover{
+        color: #fff;
+        background-position: right center;
+      }
+
+    .btn.active,
+    .btn:active {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .contact-us.details .form-select-lg{
+      -webkit-transition: 0.5s ease;
+      -o-transition: 0.5s ease;
+      transition: 0.5s ease;
+      border: 1px solid rgb(242, 242, 242);
+      background-color: rgb(255, 255, 255);
+      border-radius: 3px;
+      padding: 0px 15px;
+      width: 100%;
+      height: 55px;
+      box-shadow: none;
+      border-radius: 15px;
+      text-align: right;
+    }
+    .foot-na{margin-bottom: 10px;}
+    .phone-ic img{transform: rotate(270deg);}
+    @media(max-width:480px) {
+      .contact-us.details {
+        margin-bottom: 25px;
+        margin-top: 30px;
+    
+    }
+    .ask-send .btn{margin-top: 0;width: 100%;
+    }
+    .title-center h2 {
+      margin-bottom: 35px;
+      font-size: 24px;
+      width: 80%;
+  }
+  .feature-content span{font-size: 18px;}
+    }
