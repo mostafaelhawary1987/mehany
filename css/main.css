@@ -1807,7 +1807,7 @@ h3.line-head{padding: 15px 15px;
     @media(max-width:480px) {
       .contact-us.details {
         margin-bottom: 25px;
-        margin-top: 30px;
+        margin-top: 30px; 
     
     }
     .ask-send .btn{margin-top: 0;width: 100%;
