@@ -511,7 +511,12 @@ header{
     display: flex;
 }
 .login-but{
-    display: flex;
+    display: none;
+}
+.phone-head{
+  margin-right: auto;
+    margin-left: 25px;
+
 }
 .logo-one img {
   width: 110px;
