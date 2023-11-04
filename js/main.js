@@ -70,6 +70,35 @@ $('.partner_slider').owlCarousel({
     }
   }
 }); 
+$('.services-slider').owlCarousel({
+  items:5,
+  autoplay:false,
+  rtl:true,
+  loop: true,
+  margin:18,
+  nav:false,
+     
+  responsive:{
+    0:{
+      items:1
+    },
+    425:{
+      items:2
+    },
+    768:{
+      items:3
+    },
+    991:{
+      items:4
+    },
+    1199:{
+      items:4
+    },
+    1200:{
+      items:4
+    }
+  }
+}); 
    $('.testimonials_slider').owlCarousel({
   
   autoplay:false,
