@@ -1964,6 +1964,17 @@ h3.course-title::after {
   font-family: "tjMd";
   color: var(--text-color);
 }
+.about-page-in span{
+  font-size: 22px;
+    font-weight: 600;
+    color: var(--contact-color);
+    width: 85%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+}
 @media(max-width:480px) {
 .course-photo>img {
   height: 40vh;
