@@ -19,6 +19,17 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="fixed">
+            <div class="fixed-social">
+                <a href="#" class="facebook"><i class="lab la-facebook-f"></i></a>
+                <a href="#" class="youtube"><i class="lab la-youtube"></i></a>
+                <a href="#" class="twitter"><i class="lab la-twitter"></i></a>
+                <a href="#" class="linkin"><i class="lab la-linkedin"></i></a>
+                <a href="#" class="instagram"><i class="lab la-instagram"></i></a>
+            </div>
+        </div>
+    </div>
     <div class="preloader">
         <div class="loader"></div>
     </div>
@@ -32,49 +43,56 @@
                         <a href="#!" class="logo-one">
                             <img src="images/logo1.png" class="img-fluid" alt="logo">
                         </a>
-                        <!-- <a href="#!">
+                        <a href="#!">
                             <img src="images/logo.png" class="img-fluid" alt="logo">
-                        </a> -->
-                        <a href="#!" class="logo-one">
-                            <img src="images/logo3.png" class="img-fluid" alt="logo">
                         </a>
+                        <!-- <a href="#!" class="logo-one">
+                            <img src="images/logo3.png" class="img-fluid" alt="logo">
+                        </a> -->
                     </div>
-                    <div class="login-but">
+                    <!-- <div class="login-but">
                             <div class="log-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
                                 <a href="#!" class="lo-ce" >تسجيل مركز</a>
                             </div>
                             <div class="log-trainer wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
                                 <a href="#!" class="lo-tr" >تسجيل مدرب</a>
                             </div>
-                    </div>
+                    </div> -->
+
                     <div class="phone-head">
                         <div class="cont-fo wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
                             <a href="https://wa.me/966501107922">
+                                <div class="phone-img"></div>
                                 <img src="images/33.png" class="img-fluid" alt="logo">
+                                |
+                                <div class="phone-ic">
+                                 <img src="images/46.png" class="img-fluid " alt="logo">
+                                </div>
                                 <p>01015914000</p>
                             </a>    
                         </div>
-                        <div class="cont-fo wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <!-- <div class="cont-fo wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
                             <a href="#!" class="phone-ic">
                                 <img src="images/46.png" class="img-fluid" alt="logo">
                                 <p>20-010-159-14-000 </p>
                             </a>
-                        </div>
+                        </div> -->
 
                     </div>
                     <div class="register-head">
                         <div class="login-dropdown">
                             <div class="dropdown-head wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
-                                <a data-toggle="dropdown" class="dropdown-toggle icon-lang" href="#"><i class="las la-user-alt"></i></a>
+                                <a data-toggle="dropdown" class="dropdown-toggle icon-lang" href="#"> تسجيل دخول<i class="las la-user-alt"></i></a>
                                 
                                 <div class="dropdown-list nav-head lang-list">
-                                    <a href="#!">دخول مدرب</a>
-                                    <a href="#!">دخول مركز</a>
-                                    <a href="#!">دخول الإدارة</a>
+                                    <a href="#!"> مدرب</a>
+                                    <a href="#!"> متدرب</a>
+                                    <a href="#!"> مركز</a>
+                                    <a href="#!"> الإدارة</a>
                                 </div>
                             </div>
                             <div class="dropdown-head wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.7s">
-                                <a data-toggle="dropdown" class="dropdown-toggle icon-lang" href="#"><i class="las la-user-plus"></i></a>
+                                <a data-toggle="dropdown" class="dropdown-toggle icon-lang" href="#"> تسجيل جديد<i class="las la-user-plus"></i></a>
                                 
                                 <div class="dropdown-list nav-head lang-list">
                                     <a href="#!">حساب مدرب</a>
@@ -305,16 +323,29 @@
             </div>
         </div>
     </section>
-
+    <section
+    class="sec-banner-section"
+    style="background-image: url(./images/155.jpg)"
+  >
+    <div class="container">
+        <div class="banner-p">
+            <div class="ban-content">
+                <h3 class="banner-title wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.6s"> تود الإعتماد كمركز تعليمي؟</h3>
+                <p class="banner-p wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.7s">اذا كنت تمتلك مركز تعليمي و تود الإعتماد كمركز تعليمي معتمد من منصة مهني كل ما عليك هو التسجيل و ملئ البيانات الخاصة بالمركز و سيتم المراجعة</p>
+            </div>
+                <a href="#!" class="banner-link wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.6s">سجل كمركز</a>
+        </div>    
+    </div>
+  </section>
         <!-- Start service -->
         <section class="services-section-home">
             <div class="container">
                 <div class="depart-title">
                     <h2>برامج مشروع مهني 2030 طويلة المدى</h2>
                 </div>
-                <div class="services-slider owl-carousel">
-                    <div class="service-item">
-                        <a href="#!" class="service">
+                    <div class="services-slider owl-carousel">
+                        <div class="service-item">
+                        <a href="#!" class="service" id="contact">
                             <div class="img-aspect">
                               <div class="service-img">
                                 <img src="images/pro11.jpg" class="img-fluid" />
@@ -322,6 +353,7 @@
                             </div>
                             <div class="service-name">أعمال المساحة والانشاءات</div>
                         </a>
+                       
                         </div>
                         <div class="service-item">
                             <a href="#!" class="service">
@@ -445,7 +477,9 @@
                             </a>
                         </div>
                     </div>
-                </div>
+               <div class="more-btn">
+                <a href="#!" class="mo-bt">المزيد</a>
+               </div>
               
             </div>
           </section>
@@ -471,10 +505,13 @@
     <div class="container">
         <div class="banner-p">
             <div class="ban-content">
-                <h3 class="banner-title wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.6s"> تود الإعتماد كمركز تعليمي؟</h3>
-                <p class="banner-p wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.7s">اذا كنت تمتلك مركز تعليمي و تود الإعتماد كمركز تعليمي معتمد من منصة مهني كل ما عليك هو التسجيل و ملئ البيانات الخاصة بالمركز و سيتم المراجعة</p>
+                <h3 class="banner-title wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.6s">اذا كنت متدرب او تبحث عن تأهيل لسوق العمل وتراخيص مزاولة المهنة</h3>
+                <p class="banner-p wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.7s">الحق فرصتك وسجل الان بالبرامج المهنية طويلة المدى
+                    مجموعة من أفضل المدربيين والاستشاريين في الشرق الأوسط جودة عالية من المعايير الأساسية للتدريب المهني
+                    </p>
+              
             </div>
-                <a href="#!" class="banner-link wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.6s">سجل كمركز</a>
+                <a href="#!" class="banner-link wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.6s">سجل الأن</a>
         </div>    
     </div>
   </section>
@@ -613,7 +650,17 @@
     <footer>
         <div class="container">
             <div class="logo-foot wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                <img src="images/logo.png" class="img-fluid" alt="logo">
+
+                <a href="#!" class="logo-one no">
+                    <img src="images/logo1.png" class="img-fluid" alt="logo">
+                </a>
+                
+                <a href="#!" class="logo-one">
+                    <img src="images/logo3.png" class="img-fluid" alt="logo">
+                </a>
+                <a href="#!">
+                    <img src="images/logo.png" class="img-fluid" alt="logo">
+                </a>
                 <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">مهني لاعتماد المراكز التدريبية عن طريق عملية تقييم موحدة ومعتمدة وزيارات ميدانية</p>
             </div>
             <div class="contact-foot">
@@ -634,6 +681,9 @@
 
             </div>
         </div>
+        <a class="whats" href="https://wa.me/000000000" aria-label="whatsapp">
+            <i class="lab la-whatsapp"></i>
+        </a>
     </footer> 
     <div class="foot-copy wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="container">
@@ -653,6 +703,54 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="">
+        <div id="contactForm">
+
+            <button type="button" class="close">
+                <i class="las la-times-circle"></i>
+            </button>
+            <h3 class="popup-title">أعمال المساحة والانشاءات</h3>
+            <div class="popup-flex">
+                <div class="popup-photo">
+                    <img src="images/pro11.jpg" class="img-fluid">
+                </div>
+                <div class="popup-cost">
+                    <h3> 1200 <span>جنيه</span></h3>
+                    <div class="course-time">
+                      <h5>50 ساعه<span> - </span> <span> 18/11/2023</span></h5>
+                    </div>
+                    <div class="o-form">
+                        <button class="formBtn" type="submit" data-toggle="modal" data-target="#order_modal">
+                            احجز الآن
+                        </button>
+                    </div>
+    
+                </div>
+            </div>
+          
+            <p class="popup-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل افتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.</p>
+            <div class="popup-title">
+                <h3>أهداف البرنامج</h3>
+                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل افتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.</p>
+                <ul class="list-unstyled list-inline">
+                    <li>مراكز ومعاهد ومؤسسات وإدارت التدريب المهني على مستوى الجمهورية.</li>
+                    <li>المدربين والفنيين والاستشاريين المهنين.</li>
+                    <li>المتدربين المستهدفين هم من يرغب في إتقان مهنة أو تحويل مسار. </li>
+
+                </ul>
+            </div>
+            <div class="popup-title">
+                <h3>مخرجات البرنامج</h3>
+                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل افتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.</p>
+            </div>
+            
+          
+                
+            </form>
+        </div>
+        <div class="contact-over"></div>
     </div>
 
 

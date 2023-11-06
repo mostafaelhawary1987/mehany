@@ -71,13 +71,13 @@ $('.partner_slider').owlCarousel({
   }
 }); 
 $('.services-slider').owlCarousel({
-  items:5,
+  items:4,
   autoplay:false,
   rtl:true,
   loop: true,
   margin:18,
   nav:false,
-     
+  dots:true,
   responsive:{
     0:{
       items:1
@@ -89,7 +89,7 @@ $('.services-slider').owlCarousel({
       items:3
     },
     991:{
-      items:4
+      items:3
     },
     1199:{
       items:4
@@ -179,6 +179,31 @@ function scrollFunction() {
   }
 }
 
+});
+$(function() {
+        
+  // contact form animations 
+  $('#contact').click(function() {
+  $('#contactForm').fadeIn();
+  $('.contact-over').fadeIn();
+  
+  })
+  $(document).mouseup(function (e) {
+  var container = $("#contactForm");
+
+  if (!container.is(e.target) // if the target of the click isn't the container...
+      && container.has(e.target).length === 0) // ... nor a descendant of the container
+  {
+      container.fadeOut();
+      $('.contact-over').fadeOut();
+  }
+  });
+  
+});
+
+$('#contactForm button.close').on('click ', function(event) {
+  $('#contactForm').fadeOut();
+  $('.contact-over').fadeOut();
 });
 
 if ($(window).width() <= 480){ 
