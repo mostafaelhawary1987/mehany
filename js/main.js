@@ -33,9 +33,9 @@ $('.overlay-om , header nav .close-xs').on("click", function (e) {
     $(".nav-xs-om").removeClass("active");
 });
 $('.content-slider').owlCarousel({
-  autoplay: false,
+  autoplay: true,
   rtl: true,
-  loop: false,
+  loop: true,
   dots:true,
   nav: false,
   items: 1,
@@ -43,7 +43,7 @@ $('.content-slider').owlCarousel({
 });
 $('.partner_slider').owlCarousel({
   items:5,
-  autoplay:false,
+  autoplay:true,
   rtl:true,
   loop: true,
   margin:18,
@@ -72,7 +72,7 @@ $('.partner_slider').owlCarousel({
 }); 
 $('.services-slider').owlCarousel({
   items:4,
-  autoplay:false,
+  autoplay:true,
   rtl:true,
   loop: true,
   margin:18,
