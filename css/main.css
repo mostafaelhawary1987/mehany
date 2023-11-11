@@ -657,24 +657,32 @@ a.icon-lang {
     -o-transition: 0.4s ease;
     transition: 0.4s ease;
 }
-.logi{background-color: #f2f4f7;
+/* .logi{
+  background-color: #f2f4f7;
   border-color: var(--main-color);
   color: var(--main-color);
   border: 1px solid var(--main-color);
   -webkit-transition: 0.4s ease;
   -o-transition: 0.4s ease;
   transition: 0.4s ease;
+} */
+.logi{
+  background-color:var(--main-color);
+  color: var(--white-color);
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 .logi:hover{
   color: var(--white-color);
-  background-color: var(--main-color);
+  background-color: var(--sec-color);
 }
-.regi{background-color: var(--main-color);
+.regi{background-color: var(--sec-color);
   color: white;
   border:1px solid transparent;
 }
 .regi:hover{
-  background-color: var(--sec-color);
+  background-color: var(--main-color);
   color: white;
 }
 .icon-lang i {
