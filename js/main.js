@@ -70,6 +70,35 @@ $('.partner_slider').owlCarousel({
     }
   }
 }); 
+$('.side-news').owlCarousel({
+  autoplay: true,
+  rtl: true,
+  margin:15,
+  loop:true,
+  nav: false,
+  dots:false,
+  navText: ["<i class='fas fa-chevron-right'></i>","<i class='fas fa-chevron-left'></i>"],
+  responsive: {
+      0: {
+          items: 1
+      },
+      480: {
+          items: 2
+      },
+      767: {
+          items: 3
+      },
+      991: {
+          items: 3   
+      },
+      1199: {
+          items: 4
+      },
+      1200: {
+          items: 4
+      }
+  }
+});
 $('.services-slider').owlCarousel({
   items:4,
   autoplay:true,
@@ -99,6 +128,71 @@ $('.services-slider').owlCarousel({
     }
   }
 }); 
+//Special offers slider Transparency functions
+function transp() {
+  var xx = $('.gallerys .owl-item.active');
+  xx.first().find('.part-item').addClass('transp');
+  xx.last().find('.part-item').addClass('transp');
+}
+
+function untransp() {
+  $('.gallerys .owl-item').each(function () {
+      $(this).find('.part-item').removeClass('transp');
+  });
+}
+
+function transplg() {
+  var xx = $('.gallerys .owl-item.active');
+  xx.first().find('.part-item').addClass('transp');
+  xx.last().find('.part-item').addClass('transp');
+}
+
+$(".gallerys .owl-carousel").owlCarousel({
+  autoplay: true,
+  loop: true,
+  nav: false,
+  dots: false,
+  margin: 10,
+ 
+  center: true,
+  rtl: true,
+  responsive: {
+      0: {
+          items: 1,
+          dots: true
+      },
+      480: {
+          items: 3,
+          dots: true
+      },
+      768: {
+          items: 4,
+          dots: true
+      },
+      991: {
+          items: 4,
+          center: true,
+          onInitialized: transp,
+          onTranslate: untransp,
+          onTranslated: transp,
+          onDragged: untransp
+      },
+      1199: {
+          items: 6,
+          onInitialized: transp,
+          onTranslate: untransp,
+          onTranslated: transp,
+          onDragged: untransp
+      },
+      1400: {
+          items: 8,
+          onInitialized: transplg,
+          onTranslate: untransp,
+          onTranslated: transplg,
+          onDragged: untransp
+      }
+  }
+});
    $('.testimonials_slider').owlCarousel({
   
   autoplay:false,
