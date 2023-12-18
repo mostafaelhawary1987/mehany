@@ -2660,7 +2660,15 @@ h3.banner-title {
 .add-branch .dropdown-toggle::after {
   display: none;
 }
-            
+       .address h2{    font-size: 23px;
+        font-weight: 700;
+        color: var(--main-color);}    
+        .address p{
+          font-size: 20px;
+          color: var(--text-color);
+          margin-top: 12px;
+          text-align: justify;
+        }
 /* Map Section */
 
 /* gallery section */
