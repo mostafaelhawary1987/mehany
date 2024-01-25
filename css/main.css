@@ -1980,7 +1980,7 @@ h3.line-head::after {
 .contact-us.details .form-select:focus {
     border-color: var(--main-color);
 }
-
+.ask-send{margin-top: 15px;}
     .ask-send .btn{
       line-height: 46px;
       width: 150px;
