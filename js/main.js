@@ -219,7 +219,16 @@ $(".gallerys .owl-carousel").owlCarousel({
     }
   }
 }); 
-
+$('.faq-title').click(function () {
+  $(".faq-title").not(this).removeClass("active");
+  $(this).toggleClass("active");
+  if ($(this).siblings().css('display') == 'none') {
+      $(this).siblings().slideDown(500);
+  } else {
+      $(this).siblings().slideUp(500);
+  }
+  $(".faq-title").not(this).siblings().slideUp(500);
+})
 $(document).ready(function(){
 var a = 0;
 $(window).scroll(function() {
