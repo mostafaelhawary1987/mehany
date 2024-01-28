@@ -2892,3 +2892,8 @@ border-color: var(--main-color);
     margin-bottom: 0;
     margin: 0px 10px;
 }
+.trainerss-blogs{
+  background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
