@@ -70,6 +70,35 @@ $('.partner_slider').owlCarousel({
     }
   }
 }); 
+$('.vedio_slider').owlCarousel({
+  items:2,
+  autoplay:false,
+  rtl:true,
+  loop: true,
+  margin:18,
+  nav:false,
+     dots:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    425:{
+      items:1
+    },
+    768:{
+      items:1
+    },
+    991:{
+      items:1
+    },
+    1199:{
+      items:2
+    },
+    1200:{
+      items:2
+    }
+  }
+}); 
 $('.side-news').owlCarousel({
   autoplay: true,
   rtl: true,
