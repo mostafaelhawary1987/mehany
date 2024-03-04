@@ -72,7 +72,7 @@ $('.partner_slider').owlCarousel({
 }); 
 $('.vedio_slider').owlCarousel({
   items:2,
-  autoplay:false,
+  autoplay:true,
   rtl:true,
   loop: true,
   margin:18,

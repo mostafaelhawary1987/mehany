@@ -2909,6 +2909,14 @@ border-color: var(--main-color);
   height: 320px;
   }
   .veo h2{color: white;}
+  .more-btn.ve .mo-bt {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+  .more-btn.ve .mo-bt:hover {
+    color: var(--main-color);
+    background-color: #fff;
+}
 @media (max-width:1199px){
 
   .vedio-item{ text-align: center; }
